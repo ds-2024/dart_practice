@@ -7,16 +7,17 @@ void main(){
   //PersonVo personVo = PersonVo(name: "정우성", company:"02-2222-2222", personId: 1, hp: "010-2222-2222");
   //print(personVo);
 
-  //맨앞에 이름은 필수 포지셔널, 나머지는 네임드
+  //맨앞에 이름은 필수 포지셔널, 나머지는 네임드 cf)ex11
   PersonVo personVo = PersonVo("정우성", hp:"010-2222-2222");
   print(personVo);
 }
+
 
 class PersonVo{
   //필드
   //null은 절대 안된다 가 디폴트값
   int? personId; //타입에 ? 달아주면 값이 null 이 될 수도 있다
-  String name;
+  String name; //this.name 이라고 치고 기본값 안달아주면 ? 쳐도 값 안넣어주면 에러 뜸.
   String hp;
   String company;
 
